@@ -5,6 +5,8 @@
 
 **แจกฟรี** ใช้ได้ทั้งที่บ้าน ร้านอาหาร งานเลี้ยง และชุมชน
 
+🌐 **เว็บไซต์:** https://thepost10913.github.io/syskaraoke-free/
+
 <p align="center">
   <img src="docs/pc-main.png" width="100%" alt="SysKaraoke บน PC">
 </p>
