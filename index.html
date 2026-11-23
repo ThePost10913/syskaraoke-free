@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SysKaraoke โปรแกรมคาราโอเกะ MIDI ฟรี (NCN / EMK) สำหรับ PC และ Android</title>
+<meta name="description" content="ดาวน์โหลดฟรี SysKaraoke โปรแกรมมิดี้คาราโอเกะ เล่นเพลง NCN / EMK บน Windows และแอปมือถือ Android เนื้อร้องขึ้นจอทีวี ขอเพลงผ่าน QR ปรับคีย์ ความเร็ว ใช้ SoundFont ได้">
+<meta name="keywords" content="โปรแกรมคาราโอเกะ, มิดี้คาราโอเกะ, คาราโอเกะฟรี, โปรแกรมคาราโอเกะ ฟรี, แอปคาราโอเกะ Android, NCN, EMK, MIDI karaoke, SoundFont, คาราโอเกะ กล่องทีวี">
+<link rel="canonical" href="https://thepost10913.github.io/syskaraoke-free/">
+<!-- Google Search Console: วางแท็ก google-site-verification ที่ได้จาก Google ไว้บรรทัดถัดไป -->
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="SysKaraoke โปรแกรมคาราโอเกะ MIDI ฟรี สำหรับ PC และ Android">
+<meta property="og:description" content="เล่นเพลง NCN / EMK เนื้อร้องขึ้นจอทีวี เพื่อนสแกน QR ขอเพลงได้ แจกฟรี">
+<meta property="og:image" content="https://thepost10913.github.io/syskaraoke-free/docs/og.jpg">
+<meta property="og:url" content="https://thepost10913.github.io/syskaraoke-free/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b1540">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=Sarabun:wght@400;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SysKaraoke",
+  "alternateName": "SysKaraoke Mobile",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Windows 10, Windows 11, Android 7+",
+  "description": "โปรแกรมคาราโอเกะ MIDI สำหรับเพลง NCN / EMK บน Windows และ Android แจกฟรี",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "THB" },
+  "downloadUrl": "https://github.com/ThePost10913/syskaraoke-free/releases/latest",
+  "screenshot": "https://thepost10913.github.io/syskaraoke-free/docs/pc-main.png",
+  "author": { "@type": "Person", "name": "ฅนเมืองลีรักบ้านเกิด" },
+  "inLanguage": "th"
+}
+</script>
+<style>
+:root{--bg:#081033;--bg2:#0e1c55;--card:#13246a;--line:#24398c;--tx:#eef2ff;--mut:#a9b6e8;--gold:#ffb81c;--gold2:#ffd36a;--blue:#3ea6ff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Sarabun,system-ui,sans-serif;font-size:17px;line-height:1.65}
+h1,h2,h3,.btn,.brand{font-family:Kanit,Sarabun,sans-serif}
+a{color:var(--gold2)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:5;background:rgba(8,16,51,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:700;font-size:22px;text-decoration:none;color:var(--tx)}
+.brand span{color:var(--gold)}
+nav a{color:var(--mut);text-decoration:none;margin-left:18px;font-size:15px}
+nav a:hover{color:var(--tx)}
+.hero{background:radial-gradient(1200px 500px at 50% -10%,#2a52d6 0%,transparent 60%),linear-gradient(180deg,var(--bg2),var(--bg));padding:64px 0 40px;text-align:center}
+.hero h1{font-size:clamp(30px,5vw,52px);line-height:1.2;margin:0 0 14px}
+.hero h1 span{color:var(--gold)}
+.hero p.lead{font-size:clamp(17px,2.2vw,20px);color:var(--mut);max-width:760px;margin:0 auto 28px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:14px;font-weight:600;font-size:18px;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--gold);color:#1a1300}
+.btn.ghost{border:2px solid var(--line);color:var(--tx)}
+.note{color:var(--mut);font-size:14px;margin-top:14px}
+.shot{margin:40px auto 0;max-width:1000px;border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.shot img{display:block;width:100%;height:auto}
+section{padding:56px 0}
+section h2{font-size:clamp(24px,3.4vw,34px);margin:0 0 8px}
+section p.sub{color:var(--mut);margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:19px}
+.card p{margin:0;color:var(--mut);font-size:15.5px}
+.ic{font-size:26px;margin-bottom:6px}
+.phones{display:flex;gap:16px;justify-content:center;align-items:flex-end;flex-wrap:wrap;margin-top:28px}
+.phones figure{margin:0;width:min(240px,46%)}
+.phones img{width:100%;height:auto;border-radius:16px;border:1px solid var(--line)}
+.phones figcaption,.duo figcaption{text-align:center;color:var(--mut);font-size:14px;margin-top:6px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.duo figure{margin:0}
+.duo img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:14px;overflow:hidden}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);font-size:16px}
+th{font-family:Kanit,sans-serif;font-weight:600;color:var(--gold2);background:#0f1d5c}
+code{background:#0a1647;border:1px solid var(--line);padding:1px 6px;border-radius:6px;font-size:14px}
+ol.steps{padding-left:22px}
+ol.steps li{margin-bottom:8px}
+.warn{background:#2a1f05;border:1px solid #6b5212;color:#ffe2a0;border-radius:12px;padding:14px 16px;font-size:15.5px;margin-top:16px}
+.alt{background:var(--bg2)}
+.more a.card{text-decoration:none;color:var(--tx);display:block}
+.more a.card:hover{border-color:var(--gold)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-size:14px;text-align:center}
+.en{color:var(--mut);font-size:15px}
+@media (max-width:720px){nav{display:none}.duo{grid-template-columns:1fr}section{padding:40px 0}.hero{padding:40px 0 28px}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#">Sys<span>Karaoke</span></a>
+  <nav><a href="#features">ความสามารถ</a><a href="#download">ดาวน์โหลด</a><a href="#install">วิธีติดตั้ง</a><a href="#faq">คำถามที่พบบ่อย</a></nav>
+</div></header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <h1>โปรแกรมคาราโอเกะ <span>MIDI ฟรี</span><br>สำหรับ PC และมือถือ Android</h1>
+    <p class="lead">เล่นเพลง NCN / EMK เนื้อร้องขึ้นจอทีวี เพื่อนสแกน QR ขอเพลงจากมือถือตัวเองได้ ปรับคีย์ ความเร็ว และเสียงดนตรีด้วย SoundFont ของคุณเอง</p>
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/ThePost10913/syskaraoke-free/releases/latest">⬇️ ดาวน์โหลดฟรี</a>
+      <a class="btn ghost" href="#features">ดูความสามารถ</a>
+    </div>
+    <p class="note">Windows 10 / 11 (64 บิต) · Android 7 ขึ้นไป · มือถือ กล่องทีวี และ Android TV</p>
+    <div class="shot"><img src="docs/pc-main.png" width="1458" height="900" alt="หน้าจอโปรแกรมคาราโอเกะ SysKaraoke บน PC เนื้อร้อง คิวเพลง และช่องค้นหาเพลง"></div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <h2>ความสามารถ</h2>
+    <p class="sub">ใช้โฟลเดอร์เพลงชุดเดียวกันได้ทั้งคอมและมือถือ</p>
+    <div class="grid">
+      <div class="card"><div class="ic">📺</div><h3>เนื้อร้องขึ้นจอทีวี</h3><p>จอที่ 2 หรือแคสจากมือถือ แสดงเฉพาะเนื้อร้องและคิวเพลง ตัวหนังสือใหญ่ อ่านง่าย</p></div>
+      <div class="card"><div class="ic">📱</div><h3>เพื่อนขอเพลงผ่าน QR</h3><p>สแกนแล้วจองได้เลย ไม่ต้องลงแอป ดูเนื้อร้องเพลงตัวเองบนมือถือ ปิดทำนองนำได้</p></div>
+      <div class="card"><div class="ic">🎚️</div><h3>มิกเซอร์แยกเครื่องดนตรี</h3><p>ปรับเสียงทีละเครื่อง EQ Reverb Chorus และชุดกลองตามแนวเพลง</p></div>
+      <div class="card"><div class="ic">🎹</div><h3>ใช้ SoundFont ของตัวเอง</h3><p>รองรับไฟล์ .sf2 ขนาดใหญ่ เสียงดนตรีดีขึ้นทันทีทั้งบน PC และมือถือ</p></div>
+      <div class="card"><div class="ic">🎵</div><h3>ปรับคีย์และความเร็ว</h3><p>ตั้งได้ตั้งแต่ตอนเลือกเพลง มีป้ายบอกความเร็ว (BPM) เทียบกับเพลงที่กำลังเล่น</p></div>
+      <div class="card"><div class="ic">🔍</div><h3>ค้นหาเพลงไว</h3><p>ค้นจากรหัส ชื่อเพลง หรือศิลปิน อ่านรายชื่อจาก SONG.DBF ได้ทันที เพลงนับแสนก็ไม่ช้า</p></div>
+      <div class="card"><div class="ic">💡</div><h3>ไฟปาร์ตี้ DMX</h3><p>รุ่น PC ควบคุมไฟพาร์ LED ให้เต้นตามจังหวะเพลง</p></div>
+      <div class="card"><div class="ic">🔔</div><h3>แจ้งเตือนรุ่นใหม่</h3><p>โปรแกรมตรวจรุ่นใหม่ให้เอง ไม่พลาดการอัปเดต</p></div>
+    </div>
+
+    <div class="phones">
+      <figure><img src="docs/mobile-search.png" width="540" height="1085" loading="lazy" alt="แอปคาราโอเกะ Android หน้าค้นหาเพลง ปรับคีย์และความเร็ว"><figcaption>ค้นหาและจองเพลง</figcaption></figure>
+      <figure><img src="docs/mobile-sing.png" width="540" height="1085" loading="lazy" alt="แอปคาราโอเกะ Android หน้าร้องเพลง เนื้อร้องคาราโอเกะ"><figcaption>หน้าร้องเพลง</figcaption></figure>
+      <figure><img src="docs/mobile-guest.png" width="482" height="764" loading="lazy" alt="หน้าขอเพลงคาราโอเกะผ่าน QR บนมือถือเพื่อน"><figcaption>เพื่อนขอเพลงผ่าน QR</figcaption></figure>
+    </div>
+    <div class="duo">
+      <figure><img src="docs/pc-mixer.png" width="1591" height="671" loading="lazy" alt="มิกเซอร์คาราโอเกะแยกเครื่องดนตรี MIDI"><figcaption>มิกเซอร์ 16 ช่อง</figcaption></figure>
+      <figure><img src="docs/pc-tv.png" width="1410" height="900" loading="lazy" alt="จอเนื้อร้องคาราโอเกะบนทีวี พร้อม QR ขอเพลง"><figcaption>จอเนื้อร้องบนทีวี</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="alt">
+  <div class="wrap">
+    <h2>ดาวน์โหลดฟรี</h2>
+    <p class="sub">ไฟล์ทั้งหมดอยู่ในหน้า Releases ของ GitHub</p>
+    <table>
+      <tr><th>ใช้กับ</th><th>ไฟล์</th></tr>
+      <tr><td>Windows 10 / 11 (64 บิต)</td><td><code>SysKaraoke_Free_Setup_….exe</code></td></tr>
+      <tr><td>มือถือ / กล่องทีวี / Android TV (Android 7+)</td><td><code>SysKaraokeMobile-….apk</code></td></tr>
+      <tr><td>คู่มือเริ่มใช้งานแอปมือถือ</td><td><code>SysKaraoke.pdf</code></td></tr>
+    </table>
+    <div class="btns" style="margin-top:22px"><a class="btn primary" href="https://github.com/ThePost10913/syskaraoke-free/releases/latest">⬇️ ไปหน้าดาวน์โหลด</a></div>
+    <div class="warn">โปรแกรมนี้แจกฟรี <b>ถ้ามีคนขาย แปลว่าไม่ใช่ของแท้</b> ดาวน์โหลดจาก GitHub นี้เท่านั้น · โปรแกรมไม่มีเพลงและ SoundFont มาให้ ใช้ไฟล์ที่ตัวเองมีสิทธิ์ใช้งาน</div>
+  </div>
+</section>
+
+<section id="install">
+  <div class="wrap">
+    <h2>วิธีติดตั้ง</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>💻 Windows</h3>
+        <ol class="steps">
+          <li>ดับเบิลคลิกไฟล์ Setup แล้วกด Next ใช้โฟลเดอร์ที่โปรแกรมแนะนำ</li>
+          <li>Windows เตือน "Windows protected your PC" ให้กด <b>More info → Run anyway</b></li>
+          <li>วางไฟล์ <code>.sf2</code> ในโฟลเดอร์ SoundFonts แล้วเลือกคลังเพลงในโปรแกรม</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>📱 Android</h3>
+        <ol class="steps">
+          <li>โหลดไฟล์ <code>.apk</code> แตะเพื่อติดตั้ง อนุญาต "ติดตั้งแอปที่ไม่รู้จัก"</li>
+          <li>Play Protect เตือน ให้กด <b>ติดตั้งต่อ</b></li>
+          <li>เปิดแอป เลือกโฟลเดอร์ที่มี <code>Songs</code> และ <code>Data</code> อยู่ข้างใน</li>
+        </ol>
+        <p>กล่องทีวี: คัดลอก APK ลงแฟลชไดรฟ์ หรือใช้แอป Downloader</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="alt">
+  <div class="wrap">
+    <h2>คำถามที่พบบ่อย</h2>
+    <div class="grid">
+      <div class="card"><h3>เสียค่าใช้จ่ายไหม</h3><p>ไม่เสีย แจกฟรีทั้ง PC และ Android ใช้ได้ทั้งที่บ้าน ร้านอาหาร และงานเลี้ยง</p></div>
+      <div class="card"><h3>มีเพลงมาให้ไหม</h3><p>ไม่มี ใช้ไฟล์เพลง NCN / EMK และ MP3 ที่คุณมีสิทธิ์ใช้งานอยู่แล้ว</p></div>
+      <div class="card"><h3>ทีวี Samsung / LG ลงได้ไหม</h3><p>ลงตรงไม่ได้ เพราะไม่ใช่ Android ให้แคสหน้าจอจากมือถือขึ้นทีวีแทน</p></div>
+      <div class="card"><h3>เพื่อนเปิดหน้าขอเพลงไม่ได้</h3><p>ต้องต่อ Wi-Fi วงเดียวกัน ถ้า Wi-Fi แขกบล็อกไว้ ให้เปิดฮอตสปอตจากเครื่องหลักแทน</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="more">
+  <div class="wrap">
+    <h2>โปรแกรมแจกฟรีอื่นๆ</h2>
+    <p class="sub">จากผู้พัฒนาคนเดียวกัน</p>
+    <div class="grid">
+      <a class="card" href="https://github.com/ThePost10913/SoundSchedule"><div class="ic">🔔</div><h3>SoundSchedule</h3><p>ออดโรงเรียน เสียงตามสาย ตั้งเวลาเล่นเสียงอัตโนมัติ</p></a>
+      <a class="card" href="https://github.com/ThePost10913/water-places/releases"><div class="ic">💧</div><h3>แอปจดมิเตอร์น้ำประปาหมู่บ้าน</h3><p>สำหรับคนเดินจดมิเตอร์น้ำประปาหมู่บ้าน</p></a>
+    </div>
+    <p class="en" style="margin-top:28px"><b>English:</b> SysKaraoke is a free MIDI karaoke player for NCN / EMK songs on Windows and Android. Lyrics on TV, song requests by QR code, per-instrument mixer, custom SoundFonts, key and tempo control. <a href="https://github.com/ThePost10913/syskaraoke-free/releases/latest">Download free</a>.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">พัฒนาโดย <b>ฅนเมืองลีรักบ้านเกิด</b> · แจกฟรี ห้ามจำหน่าย · <a href="https://github.com/ThePost10913/syskaraoke-free">GitHub</a> · <a href="https://github.com/ThePost10913/syskaraoke-free/issues">แจ้งปัญหา</a></div>
+</footer>
+</body>
+</html>
